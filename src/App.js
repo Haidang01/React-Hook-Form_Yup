@@ -28,29 +28,29 @@ const App = () => {
 
   return (
     <div className="flex justify-center  items-center h-screen">
-      <form onSubmit={handleSubmit(onSubmit)} className='bg-white min-w-[500px] shadow-md rounded px-20 pt-6 pb-8 mb-4'>
-        <div class="mb-4">
+      <form onSubmit={handleSubmit(onSubmit)} className='bg-white w-[500px] max-h-[auto] shadow-md rounded px-20 pt-6 pb-8 mb-4'>
+        <div class="mb-2">
           <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
             FullName
           </label>
           <input type="text" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Full Name..." {...register("fullName")} />
           <p>{errors.fullName?.message}</p>
         </div>
-        <div class="mb-4">
+        <div class="mb-2">
           <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
             Email Address
           </label>
           <input type="text" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Email..." {...register("email")} />
           <p>{errors.email?.message}</p>
         </div>
-        <div class="mb-4">
+        <div class="mb-2">
           <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
             Age
           </label>
           <input type="number" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Age..." {...register("age")} />
           <p>{errors.age?.message}</p>
         </div>
-        <div class="mb-4">
+        <div class="mb-2">
           <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
             Password
           </label>
@@ -62,7 +62,7 @@ const App = () => {
           />
           <p>{errors.password?.message}</p>
         </div>
-        <div class="mb-4">
+        <div class="mb-2">
           <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
             Confirm Password
           </label>
